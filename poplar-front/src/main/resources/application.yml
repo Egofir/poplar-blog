@@ -1,0 +1,17 @@
+server:
+  port: 7777
+spring:
+  datasource:
+    url: jdbc:mysql://110.41.161.125:3306/by_blog?characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    # ENC()是默认加解密的标识
+    username: ENC(No7R9pr352QAB10kU/Huzw==)
+    password: ENC(nMB46YzPHdX/l8U29U6+bPFQBmyk5rzO)
+mybatis-plus:
+  configuration:
+    # 日志
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+jasypt:
+  encryptor:
+    iv-generator-classname: org.jasypt.iv.NoIvGenerator
+    algorithm: PBEWithMD5AndDES
