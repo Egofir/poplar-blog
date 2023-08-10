@@ -7,10 +7,20 @@ spring:
     # ENC()是默认加解密的标识
     username: ENC(No7R9pr352QAB10kU/Huzw==)
     password: ENC(nMB46YzPHdX/l8U29U6+bPFQBmyk5rzO)
+  servlet:
+    multipart:
+      max-file-size: 2MB
+      max-request-size: 5MB
 mybatis-plus:
   configuration:
     # 日志
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      logic-delete-field: delFlag
+      logic-delete-value: 1
+      logic-not-delete-value: 0
+      id-type: auto
 jasypt:
   encryptor:
     iv-generator-classname: org.jasypt.iv.NoIvGenerator

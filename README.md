@@ -1,4 +1,4 @@
-# poplar-blog（白杨树博客）
+# poplar-blog（白杨树博客，正在开发中...）
 
 ## 项目技术栈
 
@@ -13,4 +13,5 @@
 
 ## 项目亮点
 
-1. 使用Jasypt给配置文件中的密码加密
+1. 使用Jasypt给配置文件中的密码加密，加密算法为默认的PBEWithMD5AndDES，解决密码明文不安全问题
+2. 使用EasyCode插件自动生成entity,dao,service,serviceImpl，解决写重复代码问题

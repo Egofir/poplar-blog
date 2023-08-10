@@ -1,4 +1,4 @@
-package com.by.mapper.dao;
+package com.by.dao;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.by.domain.entity.Article;
